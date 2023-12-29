@@ -15,12 +15,14 @@ form {
     display:flex;
     margin-top:1em;
     flex-wrap: wrap;
+    width:240px;
+    height: 240px;
 }
 
 .gbox {
     background-color:#555;
-    min-width:100px;
-    min-height:100px;
+    min-width:24px;
+    min-height:24px;
     cursor:pointer; 
     
 }

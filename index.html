@@ -6,24 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
-    
-    
 
 </head>
+
+
 <body>
     <div>
-        <form id = "form-one">
-            <label for="box-size">Enter the size in pixels of each box in the grid:</label>
-            <input type="text" name="box-size" id="box-size" class="box-size" value="">
-            <button id="btnid" type="button">not used</button>
-            <button id="btnid2" type="button">not used</button>
-        </form>
-        <form id = "form-two">
-            <label for="gnum">Enter the number of boxes for the grid:</label>
-            <input type="text" name="gnum" id="gnum" class="gnum" value="">
-            <button id="gbtn" type="button">Make Grid</button>
-            <button id="delbtn" type="button">Delete Grid</button>
-        </form>
+          <form >
+            <label for="gridarea">Select the size of your grid:</label>
+            <select id="gridarea" name="gridarea">
+              <option value="240" selected>240px X 240px</option>
+              <option value="600">600px X 600px</option>
+              <option value="960" >960px X 960px</option>
+             
+            </select>
+            <button type="button" id="selbtn">select</button>
+          </form>
+
+          <form >
+            <label for="numsquares">Select the size of your grid:</label>
+            <select id="numsquares" name="numsquares">
+              <option value="4" selected>16</option>
+              <option value="5">25</option>
+              <option value="6">36</option>
+              <option value="7">49</option>
+              <option value="8">64</option>
+              <option value="9">81</option>
+              <option value="10">100</option>
+            </select>
+            <button type="button" id="numsqbtn">select</button>
+          </form>
+
+          <div>Click here to make the new grid: <button id = "newgrid">New Grid</button></div>
+          <div id = "boxmessage"></div>
     </div>
     <div class="container">
         <!--<div class="gbox"></div>
@@ -32,26 +47,7 @@
         <div class="gbox"></div>
         -->
     </div>
-    <button onclick="alert('Hello World')">Click Me</button>
-    <button id="btn">Click Me</button>
-    <button id="btn2">Click Me</button>
-
-    <h2>My shopping list</h2>
-    <div>
-        <form id = "myform">
-            <label for="item">Enter a new item:</label>
-            <input type="text" name="item" id="item" class="item" value="">
-            <button id="addme" type="button">Add Item</button>
-        </form>
-        
-        <ul>
-            
-
-        </ul>
-        
-        
-
-    </div>
+     
 
     <script src="sketch.js" defer></script>
 </body>
